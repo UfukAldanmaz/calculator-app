@@ -1,5 +1,8 @@
 body {
-    background-image: linear-gradient(to right, rgb(227, 119, 227), pink, orange, rgb(118, 237, 118), rgb(255, 98, 0));
+    background-image: linear-gradient(to right, rgb(0, 170, 255), rgb(0, 238, 255), rgb(0, 242, 255), aquamarine
+            /*rgb(227, 119, 227), pink, orange, rgb(118, 237, 118), rgb(255, 98, 0)*/
+        );
+    background-size: 195px;
 }
 
 .container {
@@ -15,7 +18,7 @@ body {
     position: relative;
     top: 50%;
     left: 50%;
-    margin: 90px 0 0 -120px;
+    margin: 120px 0 0 -150px;
 }
 
 .num {

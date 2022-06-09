@@ -39,6 +39,7 @@ function calc() {
         input.value = null;
         num1 = operate(num1, num2, operator);
         result.value = num1;
+        num2 = null;
     }
 
     else if (userInput == "%") {
@@ -55,7 +56,8 @@ function calc() {
 
     else if (userInput == "+/-") {
         if (num2 !== null) {
-            input.value = input.value * -1;
+            num2 = num2 * -1;
+            input.value = num2;
         }
     }
 
@@ -95,42 +97,3 @@ function operate(a, b, operator) {
         return b;
     }
 }
-
-
-///SUBSTRİNG EVAL BİNLER YÜZLER BASAMAĞI NOKTA İŞLEM ÖNCELİĞİ PARANTEZ
-// function userInput(btn) {
-//     document.form.inp.value = document.form.inp.value + btn;
-// }
-
-// (
-//     function () {
-//         let buttons = document.querySelectorAll(".num");
-//         let userInput = document.querySelector(".userInput");
-
-//         buttons.forEach(function (button) {
-//             button.addEventlistener("click", function (e) {
-//                 let btnVal = e.target.dataset.num;
-//                 userInput.value += btnVal;
-//             })
-
-//         });
-//     })();
-
-// function userInput() {
-//     let numberOne = document.getElementById("number1", "number2").value;
-//     document.getElementById("result").innerHTML = numberOne; //ikiden fazla hane eklemeli
-// }
-
-// document.getElementById("number1", "number2").addEventListener("click", function () {
-//     userInput();
-// })
-
-// document.getElementById("add").addEventListener("click", function () {
-//     add();
-// })
-
-// function add() {
-//     let addition = Number(document.getElementById("add").value);
-//     document.getElementById("user-input").value = "";
-// }
-// console.log(add(5, 10));
