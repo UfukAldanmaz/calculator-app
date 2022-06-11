@@ -1,7 +1,5 @@
 body {
-    background-image: linear-gradient(to right, rgb(0, 170, 255), rgb(0, 238, 255), rgb(0, 242, 255), aquamarine
-            /*rgb(227, 119, 227), pink, orange, rgb(118, 237, 118), rgb(255, 98, 0)*/
-        );
+    background-image: linear-gradient(to right, rgb(0, 170, 255), rgb(0, 238, 255), rgb(0, 242, 255), aquamarine);
     background-size: 195px;
 }
 
